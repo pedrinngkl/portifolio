@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="title">Pedro Gonçalves - Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">Pedro Gonçalves</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link" data-key="nav_inicio">Início</a></li>
+                <li><a href="sobre.html" class="nav-link" data-key="nav_sobre">Sobre</a></li>
+                <li><a href="projetos.html" class="nav-link" data-key="nav_projetos">Projetos</a></li>
+                <li><a href="projetos.html>#habilidades" class="nav-link" data-key="nav_habilidades">Habilidades</a>
+                </li>
+                <li><a href="contato.html" class="nav-link" data-key="nav_contato">Entre em Contato</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="language-button" id="lang-selector-btn">
+                        <span id="current-lang-text"><img src="https://cdn.pixabay.com/photo/2017/01/31/16/44/banner-2025436_1280.png" alt="" width="50px" height="50px"> PT-BR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="lang-dropdown">
+                        <a href="#" class="lang-option" data-lang="pt-BR"><img
+                                src="https://img.icons8.com/?size=100&id=15509&format=png&color=000000" alt=""
+                                width="20px" height="20px"> PT-BR</a>
+                        <a href="#" class="lang-option" data-lang="en-US">EN-US</a>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon-sun"> <img src="./assents/sol.png" alt="Sol" width="24" height="24"></span>
+                    <span class="theme-icon-moon"><img src="./assents/lua.png" alt="Lua" width="24" height="24"></span>
+                </button>
+                <button class="hamburger" id="hamburger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="./assents/foto_principal.jpg" alt="Foto" class="profile-img">
+                </div>
+                <div class="hero-text">
+                    <div class="hero-text-animation">
+                        <h1>
+                            <span data-key="hero_greeting">Oi! Eu sou</span><br>
+                            <span class="highlight" id="type-name"></span><span class="cursor name-cursor">|</span><br>
+                            <span class="hero-subtitle" id="type-role"></span><span class="cursor role-cursor">|</span>
+                        </h1>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary" data-key="hero_btn_projects">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-secondary" data-key="hero_btn_contact">Contato</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#sobre" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="container">
+                <h2 class="section-title" data-key="sections_about">Sobre Mim</h2>
+                <p class="about-text" data-key="sections_aboutText">
+                    Sou um desenvolvedor front-end apaixonado por criar experiências digitais incríveis. Com
+                    conhecimento em tecnologias modernas como React, JavaScript e CSS, busco sempre entregar soluções
+                    inovadoras e funcionais.
+                </p>
+            </div>
+        </section>
+
+        <section id="habilidades" class="skills">
+            <div class="container">
+                <h2 class="section-title" data-key="sections_skills">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><img src="./assents/html.png" alt="HTML"></div>
+                        <span data-key="skills_html">HTML</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><img src="./assents/css.png" alt="CSS"></div>
+                        <span data-key="skills_css">CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><img src="./assents/c-sharp.png" alt="C#"></div>
+                        <span data-key="skills_csharp">C#</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><img src="./assents/linux.png" alt="Linux"></div>
+                        <span data-key="skills_linux">LINUX</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><img src="./assents/mysql.png" alt="MySQL"></div>
+                        <span data-key="skills_mysql">MySQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><img src="./assents/computador.png" alt="Manutenção"></div>
+                        <span data-key="skills_maintenance">Manutenção de Computadores</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projects">
+            <div class="container">
+                <h2 class="section-title" data-key="sections_projects">Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./assents/projeto-belara.png" alt="Site Belara" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 data-key="projects_title_belara">Site Belara</h3>
+                                <div class="project-tech-icons">
+                                    <img src="./assents/html.png" alt="HTML" title="HTML">
+                                    <img src="./assents/css.png" alt="CSS" title="CSS">
+                                </div>
+                            </div>
+                            <p data-key="projects_description_belara">Descrição do Site Belara. Um projeto responsivo e
+                                moderno.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/pedrinngkl/site_belara" target="_blank" class="project-btn"
+                                    data-key="project_btn_view"><i class="fas fa-eye"></i> Ver Projeto </a>
+                                <a href="https://pedrinngkl.github.io/site_belara/" target="_blank" class="project-btn"
+                                    data-key="project_btn_live"><i class="fas fa-external-link-alt"></i>
+                                    Demonstração</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assents/gastronelle.PNG" alt="" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 data-key="projects_title_react">Gastronelle Delivery</h3>
+                                <div class="project-tech-icons">
+                                    <img src="./assents/html.png" alt="HTML" title="HTML">
+                                    <img src="./assents/css.png" alt="CSS" title="CSS">
+                                    <img src="./assents/javascript.png" alt="JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                            <p data-key="projects_description_react">Site de E-commerce de vendas de restaurantes e
+                                mercados.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/pedrinngkl/Gastronelle-Delivery" target="_blank"
+                                    class="project-btn" data-key="project_btn_view"><i class="fas fa-eye"></i> Ver
+                                    Projeto</a>
+                                <a href="https://pedrinngkl.github.io/Gastronelle-Delivery/" target="_blank"
+                                    class="project-btn" data-key="project_btn_live"><i
+                                        class="fas fa-external-link-alt"></i> Demonstração</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assents/spotify-clone.PNG" alt="Spotify Clone" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 data-key="projects_title_csharp_console">Spotify Clone</h3>
+                                <div class="project-tech-icons">
+                                    <img src="./assents/html.png" alt="HTML" title="HTML">
+                                    <img src="./assents/css.png" alt="CSS" title="CSS">
+                                    <img src="./assents/javascript.png" alt="JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                            <p data-key="projects_description_csharp_console">Replicação do Spotify.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/pedrinngkl/spotify_clone" target="_blank"
+                                    class="project-btn" data-key="project_btn_view"><i class="fas fa-eye"></i> Ver
+                                    Projeto</a>
+                                <a href="https://pedrinngkl.github.io/spotify_clone/" target="_blank"
+                                    class="project-btn" data-key="project_btn_live"><i
+                                        class="fas fa-external-link-alt"></i> Demonstração</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assents/projeto-mysql.jpg" alt="Banco de dados MySQL" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 data-key="projects_title_mysql_db">Sistema de Banco de Dados MySQL</h3>
+                                <div class="project-tech-icons">
+                                    <img src="./assents/mysql.png" alt="MySQL" title="MySQL">
+                                </div>
+                            </div>
+                            <p data-key="projects_description_mysql_db">Projeto de gerenciamento de banco de dados
+                                utilizando MySQL.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/pedrinngkl/mysql-database" target="_blank"
+                                    class="project-btn" data-key="project_btn_view"><i class="fas fa-eye"></i> Ver
+                                    Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="education">
+            <div class="container">
+                <h2 class="section-title" data-key="sections_education">Formação</h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h3 data-key="education_course">Técnico em Informática</h3>
+                        <p data-key="education_school">Colégio Cotemig</p>
+                        <span class="education-year" data-key="education_period">2022 - 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2 class="section-title" data-key="sections_contact">Contato</h2>
+                <div class="contact-grid">
+                    <a href="tel:+5531989908285" class="contact-card">
+                        <div class="contact-icon"><img
+                                src="https://img.icons8.com/?size=100&id=5402&format=png&color=000000" alt=""></div>
+                        <span class="contact-label" data-key="contact_phone">Telefone</span>
+                        <p class="contact-value">(31) 98990-8285</p>
+                    </a>
+                    <a href="mailto:pedrogpereira9@gmail.com" class="contact-card">
+                        <div class="contact-icon"><img
+                                src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt=""></div>
+                        <span class="contact-label" data-key="contact_email">Email</span>
+                        <p class="contact-value">pedrogpereira9@gmail.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-gon%C3%A7alves-56021336a/" target="_blank" class="contact-card">
+                        <div class="contact-icon"><img
+                                src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt=""></div>
+                        <span class="contact-label" data-key="contact_linkedin">LinkedIn</span>
+                        <p class="contact-value">/pedro-goncalves</p>
+                    </a>
+                    <a href="https://github.com/pedrinngkl" target="_blank" class="contact-card">
+                        <div class="contact-icon"><img
+                                src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt=""
+                                width="60px" height="60px"></div>
+                        <span class="contact-label" data-key="contact_github">GitHub</span>
+                        <p class="contact-value">/pedrinngkl</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-key="sections_footer">&copy; 2025 Pedro Gonçalves. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
