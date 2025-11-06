@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Pedro Gonçalves</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">Pedro Gonçalves</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                <li><a href="sobre.html" class="nav-link active">Sobre</a></li>
+                <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+                <li><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="contato.html" class="nav-link">Entre em Contato</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="language-button" id="lang-selector-btn">
+                        <span id="current-lang-text">
+                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"
+                                alt="PT-BR" width="22" height="22">
+                            PT-BR
+                        </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="lang-dropdown">
+                        <a href="#" class="lang-option" data-lang="pt-BR">
+                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"
+                                alt="PT-BR" width="20" height="20"> PT-BR
+                        </a>
+                        <a href="#" class="lang-option" data-lang="en-US">
+                            <img src="https://img.icons8.com/?size=100&id=aRiu1GGi6Aoe&format=png&color=000000"
+                                alt="EN-US" width="20" height="20"> EN-US
+                        </a>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon-sun"><img
+                            src="https://img.icons8.com/?size=100&id=9313&format=png&color=F7FF00" alt="Sol" width="24"
+                            height="24"></span>
+                    <span class="theme-icon-moon"><img
+                            src="https://img.icons8.com/?size=100&id=59841&format=png&color=000000" alt="Lua" width="24"
+                            height="24"></span>
+                </button>
+                <button class="hamburger" id="hamburger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="sobre-container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="sobre-perfil">
+                    <img src="./assents/foto_principal.jpg" alt="Foto de perfil" class="profile-img">
+                    <p class="about-text">texto sobre mim</p>
+                    <div class="sobre-contatos">
+                        <a href="mailto:pedrogpereira9@gmail.com" class="about-contact">
+                            <i class="fas fa-envelope"></i> Email <span class="mini">(clique!)</span>
+                        </a>
+                        <a href="tel:+5531989908285" class="about-contact">
+                            <i class="fas fa-phone"></i> Telefone <span class="mini">(clique!)</span>
+                        </a>
+                    </div>
+                    <div class="sobre-social">
+                        <a href="https://www.linkedin.com/in/pedro-gon%C3%A7alves-56021336a/" class="btn btn-secondary">
+                            <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"
+                                class="btn-icon">LinkedIn
+                        </a>
+                        <a href="https://github.com/pedrinngkl" class="btn btn-secondary">
+                            <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="GitHub"
+                                class="btn-icon">GitHub
+                        </a>
+                        <a href="./assents/Curriculo.pdf" class="btn btn-secondary">
+                            <img src="https://img.icons8.com/?size=100&id=39823&format=png&color=000000" alt="Currículo"
+                                class="btn-icon">Currículo
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="formacao" class="education">
+            <div class="container">
+                <h2 class="section-title" data-key="sections_education">Formação</h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h3 data-key="education_course">Técnico em Informática</h3>
+                        <p data-key="education_school">Colégio Cotemig</p>
+                        <span class="education-year" data-key="education_period">2025 - 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills sobre-center">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/html.png" alt="HTML"></div>
+                    <span data-key="skills_html">HTML</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/css.png" alt="CSS"></div>
+                    <span data-key="skills_css">CSS</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/c-sharp.png" alt="C#"></div>
+                    <span data-key="skills_csharp">C#</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/linux.png" alt="Linux"></div>
+                    <span data-key="skills_linux">LINUX</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/mysql.png" alt="MySQL"></div>
+                    <span data-key="skills_mysql">MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/computador.png" alt="Manutenção"></div>
+                    <span data-key="skills_maintenance">Manutenção de Computadores</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/docker.png" alt="Docker"></div>
+                    <span>Docker</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/javascript.png" alt="JavaScript"></div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./assents/network.png" alt="Infraestruturas de Redes"></div>
+                    <span>Infraestruturas de Redes</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2025 Pedro Gonçalves Pereira. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
