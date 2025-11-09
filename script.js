@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero (Página Inicial)
         hero_greeting: "Oi! Eu sou", 
         hero_name: "Pedro Gonçalves",
-        // CORRIGIDO: Removido &nbsp;
-        hero_role: ["Desenvolvedor Front End", "Infraestrutura de Redes"],
+        hero_role: ["Desenvolvedor Front-End", "Infraestrutura de Redes"],
         hero_btn_projects: "Ver Projetos", 
         hero_btn_contact: "Contato",
         
@@ -91,8 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero (Página Inicial)
         hero_greeting: "Hi! I am", 
         hero_name: "Pedro Gonçalves",
-        // CORRIGIDO: Removido &nbsp;
-        hero_role: ["Front End Developer", "Network Infrastructure"],
+        hero_role: ["Front-End Developer", "Network Infrastructure"],
         hero_btn_projects: "View Projects", 
         hero_btn_contact: "Contact",
         
