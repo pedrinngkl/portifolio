@@ -47,11 +47,11 @@ Este é um projeto estático. Para executar localmente, basta seguir os passos:
 
 1.  Clone o repositório:
     ```sh
-    git clone [https://github.com/pedrinngkl/seu-repositorio.git](https://github.com/pedrinngkl/seu-repositorio.git)
+    git clone [https://github.com/pedrinngkl/portifolio.git](https://github.com/pedrinngkl/portifolio.git)
     ```
 2.  Navegue até a pasta do projeto:
     ```sh
-    cd seu-repositorio
+    cd portifolio
     ```
 3.  Abra o arquivo `index.html` no seu navegador de preferência.
 
