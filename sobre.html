@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim - Pedro Gonçalves</title>
+    <title data-key="title_sobre">Sobre Mim - Pedro Gonçalves</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="script.js" defer></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cstyle%3Epath { fill: %23222; } @media (prefers-color-scheme: dark) { path { fill: %23E5E5E5; } }%3C/style%3E%3Cpath d='M30.3,76.8L1.8,50l28.5-26.8l8.6,8.1L18.5,50l20.4,18.7L30.3,76.8z M69.7,76.8L61.1,68.7L81.5,50L61.1,31.3l8.6-8.1L98.2,50 L69.7,76.8z'%3E%3C/path%3E%3C/svg%3E" type="image/svg+xml">
 </head>
 
 <body>
@@ -15,11 +16,11 @@
         <nav class="nav">
             <div class="nav-brand">Pedro Gonçalves</div>
             <ul class="nav-menu">
-                <li><a href="index.html#inicio" class="nav-link">Início</a></li>
-                <li><a href="sobre.html" class="nav-link active">Sobre</a></li>
-                <li><a href="projetos.html" class="nav-link">Projetos</a></li>
-                <li><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="contato.html" class="nav-link">Entre em Contato</a></li>
+                <li><a href="index.html#inicio" class="nav-link" data-key="nav_inicio">Início</a></li>
+                <li><a href="sobre.html" class="nav-link active" data-key="nav_sobre">Sobre</a></li>
+                <li><a href="projetos.html" class="nav-link" data-key="nav_projetos">Projetos</a></li>
+                <li><a href="sobre.html#habilidades" class="nav-link" data-key="nav_habilidades">Habilidades</a></li>
+                <li><a href="contato.html" class="nav-link" data-key="nav_contato">Entre em Contato</a></li>
             </ul>
             <div class="nav-controls">
                 <div class="language-selector">
@@ -61,10 +62,10 @@
     <main>
         <section class="about">
             <div class="sobre-container">
-                <h2 class="section-title">Sobre Mim</h2>
+                <h2 class="section-title" data-key="sections_about">Sobre Mim</h2>
                 <div class="sobre-perfil">
                     <img src="./assents/foto_principal.jpg" alt="Foto" class="profile-img">
-                    <p class="about-text">
+                    
                     <div class="about-text">
                         <p style="margin-bottom: 1rem;">
                             Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando
@@ -83,13 +84,13 @@
                             empresa e da equipe.
                         </p>
                     </div>
-                    </p>
+
                     <div class="sobre-contatos">
                         <a href="mailto:pedrogpereira9@gmail.com" class="about-contact">
-                            <i class="fas fa-envelope"></i> Email <span class="mini">(clique!)</span>
+                            <i class="fas fa-envelope"></i> Email
                         </a>
                         <a href="tel:+5531989908285" class="about-contact">
-                            <i class="fas fa-phone"></i> Telefone <span class="mini">(clique!)</span>
+                            <i class="fas fa-phone"></i> Telefone
                         </a>
                     </div>
                     <div class="sobre-social">
@@ -122,8 +123,8 @@
                 </div>
             </div>
         </section>
-        <section id="habilidades class="skills sobre-center">
-            <h2 class="section-title">Habilidades</h2>
+        <section id="habilidades" class="skills sobre-center">
+            <h2 class="section-title" data-key="sections_skills">Habilidades</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML"></div>
@@ -151,21 +152,21 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=pGtJdBrlGFyr&format=png&color=000000" alt="Docker"></div>
-                    <span>Docker</span>
+                    <span data-key="skills_docker">Docker</span>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript"></div>
-                    <span>JavaScript</span>
+                    <span data-key="skills_js">JavaScript</span>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=9948&format=png&color=000000" alt="Infraestruturas de Redes" width="39px"></div>
-                    <span>Infraestruturas de Redes</span>
+                    <span data-key="skills_infra">Infraestruturas de Redes</span>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <p>© 2025 Pedro Gonçalves Pereira. Todos os direitos reservados.</p>
+        <p data-key="sections_footer">&copy; 2025 Pedro Gonçalves Pereira. Todos os direitos reservados.</p>
     </footer>
 </body>
 
