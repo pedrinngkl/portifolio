@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
  //tradução de idiomas
-//tradução de idiomas
     const translations = {
     "pt-BR": {
         lang_text: "PT-BR",
@@ -17,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero (Página Inicial)
         hero_greeting: "Oi! Eu sou", 
         hero_name: "Pedro Gonçalves",
-        hero_role: ["Desenvolvedor Front-End", "Infraestrutura de Redes"],
+        // CORRIGIDO: Removido &nbsp;
+        hero_role: ["Desenvolvedor Front End", "Infraestrutura de Redes"],
         hero_btn_projects: "Ver Projetos", 
         hero_btn_contact: "Contato",
         
@@ -91,7 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero (Página Inicial)
         hero_greeting: "Hi! I am", 
         hero_name: "Pedro Gonçalves",
-        hero_role: ["Front-End Developer", "Network Infrastructure"],
+        // CORRIGIDO: Removido &nbsp;
+        hero_role: ["Front End Developer", "Network Infrastructure"],
         hero_btn_projects: "View Projects", 
         hero_btn_contact: "Contact",
         
@@ -133,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         project_btn_view: "View Project", 
         project_btn_live: " Live Demo",
         
-        // Contato (Seções e Página de Contato)
+        // Contato 
         sections_contact: "Contact Me", 
         contact_phone: "Phone", 
         contact_email: "Email", 
@@ -177,8 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             langPtMobile.classList.toggle('active', lang === 'pt-BR');
             document.getElementById('lang-en-mobile').classList.toggle('active', lang === 'en-US');
         }
-        // Reseta a animação para a nova língua
-        roleIndex = 0; // Reseta o contador de profissões
+        
         resetTypingAnimation(lang);
     };
 
@@ -205,7 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Função para digitar
     function typeEffect(element, text, index, cursor, callback) {
         if (index < text.length) {
-            element.innerHTML += text.charAt(index); 
+            // CORRIGIDO: de volta para textContent
+            element.textContent += text.charAt(index); 
             typingTimeout1 = setTimeout(() => typeEffect(element, text, index + 1, cursor, callback), 100);
         } else if (callback) {
             if (cursor) cursor.style.display = 'none';
