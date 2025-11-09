@@ -7,8 +7,9 @@
     <title data-key="title_sobre">Sobre Mim - Pedro Gonçalves</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script src="script.js" defer></script>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cstyle%3Epath { fill: %23222; } @media (prefers-color-scheme: dark) { path { fill: %23E5E5E5; } }%3C/style%3E%3Cpath d='M30.3,76.8L1.8,50l28.5-26.8l8.6,8.1L18.5,50l20.4,18.7L30.3,76.8z M69.7,76.8L61.1,68.7L81.5,50L61.1,31.3l8.6-8.1L98.2,50 L69.7,76.8z'%3E%3C/path%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -67,44 +68,40 @@
                     <img src="./assents/foto_principal.jpg" alt="Foto" class="profile-img">
                     
                     <div class="about-text">
-                        <p style="margin-bottom: 1rem;">
-                            Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando
-                            o Ensino Médio e Técnico em Informática no Colégio Cotemig. Estou buscando ativamente uma
-                            oportunidade de estágio para aplicar e expandir meus conhecimentos práticos.
+                        <p style="margin-bottom: 1rem;" data-key="about_p1">
+                            Eu sou Pedro Gonçalves, um jovem de 17 anos...
                         </p>
-                        <p style="margin-bottom: 1rem;">
-                            Minhas habilidades incluem desenvolvimento web com HTML e CSS, lógica de programação em C# e
-                            noções de banco de dados MySQL. Também tenho experiência com montagem e manutenção de
-                            computadores. Além da minha formação principal, completei diversos cursos, incluindo
-                            Fundamentos de Hardware, Introdução à Cibersegurança e Introdução à IA Moderna pela Cisco
-                            Academy.
+                        <p style="margin-bottom: 1rem;" data-key="about_p2">
+                            Minhas habilidades incluem desenvolvimento web...
                         </p>
-                        <p>
-                            Meu objetivo é aprender continuamente e contribuir de forma prática para o crescimento da
-                            empresa e da equipe.
+                        <p data-key="about_p3">
+                            Meu objetivo é aprender continuamente...
                         </p>
                     </div>
 
                     <div class="sobre-contatos">
                         <a href="mailto:pedrogpereira9@gmail.com" class="about-contact">
-                            <i class="fas fa-envelope"></i> Email
+                            <i class="fas fa-envelope"></i> <span data-key="contact_email">Email</span>
                         </a>
                         <a href="tel:+5531989908285" class="about-contact">
-                            <i class="fas fa-phone"></i> Telefone
+                            <i class="fas fa-phone"></i> <span data-key="contact_phone">Telefone</span>
                         </a>
                     </div>
                     <div class="sobre-social">
                         <a href="https://www.linkedin.com/in/pedro-gon%C3%A7alves-56021336a/" class="btn btn-secondary">
                             <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn"
-                                class="btn-icon">LinkedIn
+                                class="btn-icon">
+                            <span data-key="contact_linkedin">LinkedIn</span>
                         </a>
                         <a href="https://github.com/pedrinngkl" class="btn btn-secondary">
                             <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub"
-                                class="btn-icon">GitHub
+                                class="btn-icon">
+                            <span data-key="contact_github">GitHub</span>
                         </a>
-                        <a href="./assents/Curriculo.pdf" class="btn btn-secondary">
+                        <a href="./assents/Curriculo.pdf" target="_blank" class="btn btn-secondary">
                             <img src="https://img.icons8.com/?size=100&id=39823&format=png&color=000000" alt="Currículo"
-                                class="btn-icon">Currículo
+                                class="btn-icon">
+                            <span data-key="resume">Currículo</span>
                         </a>
                     </div>
 

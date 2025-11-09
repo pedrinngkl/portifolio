@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
  //tradução de idiomas
+//tradução de idiomas
     const translations = {
     "pt-BR": {
         lang_text: "PT-BR",
@@ -16,14 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero (Página Inicial)
         hero_greeting: "Oi! Eu sou", 
         hero_name: "Pedro Gonçalves",
-        hero_role: ["Desenvolvedor Front-End", "Infraestrutura de Redes"],
+        hero_role: ["Desenvolvedor Front&nbsp;End", "Infraestrutura de Redes"],
         hero_btn_projects: "Ver Projetos", 
         hero_btn_contact: "Contato",
         
-        // Sobre (Página Inicial)
+        // Sobre (Página Inicial - TEXTO CURTO)
         sections_about: "Sobre Mim", 
         sections_aboutText: "Olá! Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando o Ensino Médio e Técnico em Informática no Colégio Cotemig. Estou buscando ativamente uma oportunidade de estágio para aplicar e expandir meus conhecimentos práticos. Minhas habilidades incluem HTML, CSS, C# e MySQL, além de manutenção de computadores. Meu objetivo é aprender continuamente e contribuir de forma prática para o crescimento da empresa e da equipe.",
         
+        // Sobre (Página Sobre - TEXTO LONGO)
+        about_p1: "Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando o Ensino Médio e Técnico em Informática no Colégio Cotemig. Estou buscando ativamente uma oportunidade de estágio para aplicar e expandir meus conhecimentos práticos.",
+        about_p2: "Minhas habilidades incluem desenvolvimento web com HTML e CSS, lógica de programação em C# e noções de banco de dados MySQL. Também tenho experiência com montagem e manutenção de computadores. Além da minha formação principal, completei diversos cursos, incluindo Fundamentos de Hardware, Introdução à Cibersegurança e Introdução à IA Moderna pela Cisco Academy.",
+        about_p3: "Meu objetivo é aprender continuamente e contribuir de forma prática para o crescimento da empresa e da equipe.",
+
         // Formação
         sections_education: "Formação", 
         education_course: "Técnico em Informática", 
@@ -59,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contact_email: "Email", 
         contact_linkedin: "LinkedIn", 
         contact_github: "GitHub",
+        resume: "Currículo",
         form_title: "Envie uma Mensagem",
         contact_links_title: "Ou me encontre por aqui:",
         form_name: "Nome",
@@ -84,13 +91,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero (Página Inicial)
         hero_greeting: "Hi! I am", 
         hero_name: "Pedro Gonçalves",
-        hero_role: ["Front-End Developer", "Network Infrastructure"],
+        hero_role: ["Front&nbsp;End Developer", "Network Infrastructure"],
         hero_btn_projects: "View Projects", 
         hero_btn_contact: "Contact",
         
-        // Sobre (Página Inicial)
+        // Sobre (Página Inicial - TEXTO CURTO)
         sections_about: "About Me", 
         sections_aboutText: "Hello! I am Pedro Gonçalves, a 17-year-old passionate about technology, currently studying High School and a Technical Course in Informatics at Colégio Cotemig. I am actively seeking an internship to apply and expand my practical knowledge. My skills include HTML, CSS, C#, and MySQL, as well as computer maintenance. My goal is to learn continuously and contribute practically to the company's and team's growth.",
+        
+        // Sobre (Página Sobre - TEXTO LONGO)
+        about_p1: "I am Pedro Gonçalves, a 17-year-old passionate about technology and currently studying High School and a Technical Course in Informatics at Colégio Cotemig. I am actively seeking an internship opportunity to apply and expand my practical knowledge.",
+        about_p2: "My skills include web development with HTML and CSS, programming logic in C#, and notions of MySQL databases. I also have experience with computer assembly and maintenance. In addition to my main training, I completed several courses, including Hardware Fundamentals, Introduction to Cybersecurity, and Introduction to Modern AI from the Cisco Academy.",
+        about_p3: "My goal is to learn continuously and contribute practically to the growth of the company and the team.",
         
         // Formação
         sections_education: "Education", 
@@ -121,12 +133,13 @@ document.addEventListener('DOMContentLoaded', () => {
         project_btn_view: "View Project", 
         project_btn_live: " Live Demo",
         
-        // Contato 
+        // Contato (Seções e Página de Contato)
         sections_contact: "Contact Me", 
         contact_phone: "Phone", 
         contact_email: "Email", 
         contact_linkedin: "LinkedIn", 
         contact_github: "GitHub",
+        resume: "Resume",
         form_title: "Send a Message",
         contact_links_title: "Or find me here:",
         form_name: "Name",
