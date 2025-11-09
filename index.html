@@ -7,6 +7,8 @@
     <title data-key="title">Pedro Gonçalves - Desenvolvedor Front-End</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
                 <li><a href="#inicio" class="nav-link" data-key="nav_inicio">Início</a></li>
                 <li><a href="sobre.html" class="nav-link" data-key="nav_sobre">Sobre</a></li>
                 <li><a href="projetos.html" class="nav-link" data-key="nav_projetos">Projetos</a></li>
-                <li><a href="projetos.html>#habilidades" class="nav-link" data-key="nav_habilidades">Habilidades</a>
+                <li><a href="#habilidades" class="nav-link" data-key="nav_habilidades">Habilidades</a>
                 </li>
                 <li><a href="contato.html" class="nav-link" data-key="nav_contato">Entre em Contato</a></li>
             </ul>
@@ -25,23 +27,30 @@
                 <div class="language-selector">
                     <button class="language-button" id="lang-selector-btn">
                         <span id="current-lang-text">
-                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000" alt="PT-BR" width="22" height="22">
+                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"
+                                alt="PT-BR" width="22" height="22">
                             PT-BR
                         </span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="language-dropdown" id="lang-dropdown">
                         <a href="#" class="lang-option" data-lang="pt-BR">
-                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000" alt="PT-BR" width="20" height="20"> PT-BR
+                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"
+                                alt="PT-BR" width="20" height="20"> PT-BR
                         </a>
                         <a href="#" class="lang-option" data-lang="en-US">
-                            <img src="https://img.icons8.com/?size=100&id=aRiu1GGi6Aoe&format=png&color=000000" alt="EN-US" width="20" height="20"> EN-US
+                            <img src="https://img.icons8.com/?size=100&id=aRiu1GGi6Aoe&format=png&color=000000"
+                                alt="EN-US" width="20" height="20"> EN-US
                         </a>
                     </div>
                 </div>
                 <button class="theme-toggle" id="themeToggle">
-                    <span class="theme-icon-sun"><img src="https://img.icons8.com/?size=100&id=9313&format=png&color=F7FF00" alt="Sol" width="24" height="24"></span>
-                    <span class="theme-icon-moon"><img src="https://img.icons8.com/?size=100&id=59841&format=png&color=000000" alt="Lua" width="24" height="24"></span>
+                    <span class="theme-icon-sun"><img
+                            src="https://img.icons8.com/?size=100&id=9313&format=png&color=F7FF00" alt="Sol" width="24"
+                            height="24"></span>
+                    <span class="theme-icon-moon"><img
+                            src="https://img.icons8.com/?size=100&id=59841&format=png&color=000000" alt="Lua" width="24"
+                            height="24"></span>
                 </button>
                 <button class="hamburger" id="hamburger-button">
                     <span></span>
@@ -67,8 +76,8 @@
                         </h1>
                     </div>
                     <div class="hero-buttons">
-                        <a href="#projetos" class="btn btn-primary" data-key="hero_btn_projects">Ver Projetos</a>
-                        <a href="#contato" class="btn btn-secondary" data-key="hero_btn_contact">Contato</a>
+                        <a href="projetos.html" class="btn btn-primary" data-key="hero_btn_projects">Ver Projetos</a>
+                        <a href="contato.html" class="btn btn-secondary" data-key="hero_btn_contact">Contato</a>
                     </div>
                 </div>
             </div>
@@ -83,10 +92,7 @@
             <div class="container">
                 <h2 class="section-title" data-key="sections_about">Sobre Mim</h2>
                 <p class="about-text" data-key="sections_aboutText">
-                    Sou um desenvolvedor front-end apaixonado por criar experiências digitais incríveis. Com
-                    conhecimento em tecnologias modernas como React, JavaScript e CSS, busco sempre entregar soluções
-                    inovadoras e funcionais.
-                </p>
+                
             </div>
         </section>
 
@@ -95,39 +101,39 @@
                 <h2 class="section-title" data-key="sections_skills">Habilidades</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/html.png" alt="HTML"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML"></div>
                         <span data-key="skills_html">HTML</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/css.png" alt="CSS"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS"></div>
                         <span data-key="skills_css">CSS</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/c-sharp.png" alt="C#"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=55251&format=png&color=000000" alt="C#"></div>
                         <span data-key="skills_csharp">C#</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/linux.png" alt="Linux"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000" alt="Linux"></div>
                         <span data-key="skills_linux">LINUX</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/mysql.png" alt="MySQL"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=hYoELNwniGhi&format=png&color=000000" alt="MySQL" width="60px" height="60px"></div>
                         <span data-key="skills_mysql">MySQL</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/computador.png" alt="Manutenção"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=2884&format=png&color=000000" alt="Manutenção"></div>
                         <span data-key="skills_maintenance">Manutenção de Computadores</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/docker.png" alt="Docker"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=pGtJdBrlGFyr&format=png&color=000000" alt="Docker"></div>
                         <span>Docker</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/javascript.png" alt="JavaScript"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript"></div>
                         <span>JavaScript</span>
                     </div>
                     <div class="skill-card">
-                        <div class="skill-icon"><img src="./assents/network.png" alt="Infraestruturas de Redes"></div>
+                        <div class="skill-icon"><img src="https://img.icons8.com/?size=100&id=9948&format=png&color=000000" alt="Infraestruturas de Redes" width="39px"></div>
                         <span>Infraestruturas de Redes</span>
                     </div>
 
@@ -145,8 +151,8 @@
                             <div class="project-header">
                                 <h3 data-key="projects_title_belara">Site Belara</h3>
                                 <div class="project-tech-icons">
-                                    <img src="./assents/html.png" alt="HTML" title="HTML">
-                                    <img src="./assents/css.png" alt="CSS" title="CSS">
+                                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML" title="HTML">
+                                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS" title="CSS">
                                 </div>
                             </div>
                             <p data-key="projects_description_belara">Descrição do Site Belara. Um projeto responsivo e
@@ -167,9 +173,9 @@
                             <div class="project-header">
                                 <h3 data-key="projects_title_react">Gastronelle Delivery</h3>
                                 <div class="project-tech-icons">
-                                    <img src="./assents/html.png" alt="HTML" title="HTML">
-                                    <img src="./assents/css.png" alt="CSS" title="CSS">
-                                    <img src="./assents/javascript.png" alt="JavaScript" title="JavaScript">
+                                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML" title="HTML">
+                                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS" title="CSS">
+                                    <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript" title="JavaScript">
                                 </div>
                             </div>
                             <p data-key="projects_description_react">Site de E-commerce de vendas de restaurantes e
@@ -191,9 +197,9 @@
                             <div class="project-header">
                                 <h3 data-key="projects_title_csharp_console">Spotify Clone</h3>
                                 <div class="project-tech-icons">
-                                    <img src="./assents/html.png" alt="HTML" title="HTML">
-                                    <img src="./assents/css.png" alt="CSS" title="CSS">
-                                    <img src="./assents/javascript.png" alt="JavaScript" title="JavaScript">
+                                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML" title="HTML">
+                                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS" title="CSS">
+                                    <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript" title="JavaScript">
                                 </div>
                             </div>
                             <p data-key="projects_description_csharp_console">Replicação do Spotify.</p>
@@ -230,13 +236,13 @@
                 <div class="contact-grid">
                     <a href="tel:+5531989908285" class="contact-card">
                         <div class="contact-icon"><img
-                                src="https://img.icons8.com/?size=100&id=5402&format=png&color=000000" alt=""></div>
+                                src="https://img.icons8.com/?size=100&id=533&format=png&color=000000" alt="" width="35px" height="35px"></div>
                         <span class="contact-label" data-key="contact_phone">Telefone</span>
                         <p class="contact-value">(31) 98990-8285</p>
                     </a>
                     <a href="mailto:pedrogpereira9@gmail.com" class="contact-card">
                         <div class="contact-icon"><img
-                                src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt=""></div>
+                                src="https://img.icons8.com/?size=100&id=pJJmXPomYuPv&format=png&color=000000" alt=""></div>
                         <span class="contact-label" data-key="contact_email">Email</span>
                         <p class="contact-value">pedrogpereira9@gmail.com</p>
                     </a>
@@ -249,7 +255,7 @@
                     </a>
                     <a href="https://github.com/pedrinngkl" target="_blank" class="contact-card">
                         <div class="contact-icon"><img
-                                src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt=""
+                                src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt=""
                                 width="60px" height="60px"></div>
                         <span class="contact-label" data-key="contact_github">GitHub</span>
                         <p class="contact-value">/pedrinngkl</p>
@@ -262,8 +268,6 @@
     <footer class="footer">
         <p data-key="sections_footer">&copy; 2025 Pedro Gonçalves. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="script.js" defer></script>
 </body>
 
 </html>

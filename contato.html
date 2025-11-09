@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="title">Pedro Gonçalves - Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">Pedro Gonçalves</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio" class="nav-link" data-key="nav_inicio">Início</a></li>
+                <li><a href="sobre.html" class="nav-link" data-key="nav_sobre">Sobre</a></li>
+                <li><a href="projetos.html" class="nav-link" data-key="nav_projetos">Projetos</a></li>
+                <li><a href="index.html#habilidades" class="nav-link" data-key="nav_habilidades">Habilidades</a></li>
+                <li><a href="contato.html" class="nav-link active" data-key="nav_contato">Entre em Contato</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-selector">
+                    <button class="language-button" id="lang-selector-btn">
+                        <span id="current-lang-text">
+                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"
+                                alt="PT-BR" width="22" height="22">
+                            PT-BR
+                        </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="lang-dropdown">
+                        <a href="#" class="lang-option" data-lang="pt-BR">
+                            <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000"
+                                alt="PT-BR" width="20" height="20"> PT-BR
+                        </a>
+                        <a href="#" class="lang-option" data-lang="en-US">
+                            <img src="https://img.icons8.com/?size=100&id=aRiu1GGi6Aoe&format=png&color=000000"
+                                alt="EN-US" width="20" height="20"> EN-US
+                        </a>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon-sun"><img
+                            src="https://img.icons8.com/?size=100&id=9313&format=png&color=F7FF00" alt="Sol" width="24"
+                            height="24"></span>
+                    <span class="theme-icon-moon"><img
+                            src="https://img.icons8.com/?size=100&id=59841&format=png&color=000000" alt="Lua" width="24"
+                            height="24"></span>
+                </button>
+                <button class="hamburger" id="hamburger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-page">
+            <div class="container" style="margin-top:5rem;">
+                <h2 class="section-title" data-key="sections_contact">Entre em Contato</h2>
+                
+                <div class="contact-page-grid">
+                    
+                    <div class="contact-form-container">
+                        <h3>Envie uma Mensagem</h3>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="SUA_CHAVE_AQUI">
+
+                            <div class="form-group-split">
+                                <div class="form-group">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" name="nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-links-container">
+                        <h3>Ou me encontre por aqui:</h3>
+                        <div class="contact-grid">
+                            <a href="tel:+5531989908285" class="contact-card">
+                                <div class="contact-icon"><img
+                                        src="https://img.icons8.com/?size=100&id=533&format=png&color=000000" alt=""
+                                        width="35px"></div>
+                                <span class="contact-label" data-key="contact_phone">Telefone</span>
+                                <p class="contact-value">(31) 98990-8285</p>
+                            </a>
+                            <a href="mailto:pedrogpereira9@gmail.com" class="contact-card">
+                                <div class="contact-icon"><img
+                                        src="https://img.icons8.com/?size=100&id=pJJmXPomYuPv&format=png&color=000000" alt=""></div>
+                                <span class="contact-label" data-key="contact_email">Email</span>
+                                <p class="contact-value">pedrogpereira9@gmail.com</p>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pedro-gon%C3%A7alves-56021336a/" target="_blank"
+                                class="contact-card">
+                                <div class="contact-icon"><img
+                                        src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt=""></div>
+                                <span class="contact-label" data-key="contact_linkedin">LinkedIn</span>
+                                <p class="contact-value">/pedro-goncalves</p>
+                            </a>
+                            <a href="https://github.com/pedrinngkl" target="_blank" class="contact-card">
+                                <div class="contact-icon"><img
+                                        src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt=""
+                                        width="60px" height="60px"></div>
+                                <span class="contact-label" data-key="contact_github">GitHub</span>
+                                <p class="contact-value">/pedrinngkl</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <p data-key="sections_footer">&copy; 2025 Pedro Gonçalves. Todos os direitos reservados.</p>
+</footer>
+</body>
+
+</html>
