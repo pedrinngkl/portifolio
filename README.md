@@ -6,7 +6,7 @@
 
 > Este é o repositório do meu portfólio pessoal, construído do zero para demonstrar minhas habilidades, projetos e formação como desenvolvedor.
 
-![.assents/portifolio]([./assents/portifolio])
+![Preview]([./assents/portifolio.png])
 
 
 ---
