@@ -7,7 +7,7 @@
 > Este é o repositório do meu portfólio pessoal, construído do zero para demonstrar minhas habilidades, projetos e formação como desenvolvedor.
 
 <p align="center">
-  <img src="./assents/portifólio.png" alt="Portifólio" width="800"/>
+  <img src="./assents/portifolio.png" alt="Portifólio" width="800"/>
 </p>
 
 
