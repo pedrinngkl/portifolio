@@ -624,6 +624,9 @@ section {
 section#sobre,
 section#projetos,
 section#contato,
+section#experiencia {
+    background-color: var(--background-color);
+}
 section#formacao,
 section#habilidades {
     background-color: var(--background-color);

@@ -1,156 +1,182 @@
 document.addEventListener('DOMContentLoaded', () => {
 
- //tradução de idiomas
+    //tradução de idiomas
     const translations = {
-    "pt-BR": {
-        lang_text: "PT-BR",
-        // Títulos das Páginas
-        title_index: "Pedro Gonçalves - Desenvolvedor Front-End",
-        title_sobre: "Sobre Mim - Pedro Gonçalves",
-        title_projetos: "Projetos - Pedro Gonçalves",
-        title_contato: "Contato - Pedro Gonçalves",
+        "pt-BR": {
+            lang_text: "PT-BR",
+            // Títulos das Páginas
+            title_index: "Pedro Gonçalves - Desenvolvedor Front-End",
+            title_sobre: "Sobre Mim - Pedro Gonçalves",
+            title_projetos: "Projetos - Pedro Gonçalves",
+            title_contato: "Contato - Pedro Gonçalves",
 
-        // Navegação
-        nav_inicio: "Início", nav_sobre: "Sobre", nav_projetos: "Projetos", nav_habilidades: "Habilidades", nav_contato: "Entre em Contato",
-        
-        // Hero (Página Inicial)
-        hero_greeting: "Oi! Eu sou", 
-        hero_name: "Pedro Gonçalves",
-        hero_role: ["Desenvolvedor Front-End", "Infraestrutura de Redes"],
-        hero_btn_projects: "Ver Projetos", 
-        hero_btn_contact: "Contato",
-        
-        // Sobre (Página Inicial - TEXTO CURTO)
-        sections_about: "Sobre Mim", 
-        sections_aboutText: "Olá! Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando o Ensino Médio e Técnico em Informática no Colégio Cotemig. Estou buscando ativamente uma oportunidade de estágio para aplicar e expandir meus conhecimentos práticos. Minhas habilidades incluem HTML, CSS, C# e MySQL, além de manutenção de computadores. Meu objetivo é aprender continuamente e contribuir de forma prática para o crescimento da empresa e da equipe.",
-        
-        // Sobre (Página Sobre - TEXTO LONGO)
-        about_p1: "Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando o Ensino Médio e Técnico em Informática no Colégio Cotemig. Estou buscando ativamente uma oportunidade de estágio para aplicar e expandir meus conhecimentos práticos.",
-        about_p2: "Minhas habilidades incluem desenvolvimento web com HTML e CSS, lógica de programação em C# e noções de banco de dados MySQL. Também tenho experiência com montagem e manutenção de computadores. Além da minha formação principal, completei diversos cursos, incluindo Fundamentos de Hardware, Introdução à Cibersegurança e Introdução à IA Moderna pela Cisco Academy.",
-        about_p3: "Meu objetivo é aprender continuamente e contribuir de forma prática para o crescimento da empresa e da equipe.",
+            // Navegação
+            nav_inicio: "Início", nav_sobre: "Sobre", nav_projetos: "Projetos", nav_habilidades: "Habilidades", nav_contato: "Entre em Contato",
 
-        // Formação
-        sections_education: "Formação", 
-        education_course: "Técnico em Informática", 
-        education_school: "Colégio Cotemig", 
-        education_period: "Cursando (Previsão de Conclusão: 2026)",
-        
-        // Habilidades
-        sections_skills: "Habilidades", 
-        skills_html: "HTML", 
-        skills_css: "CSS", 
-        skills_csharp: "C#", 
-        skills_linux: "LINUX", 
-        skills_mysql: "MySQL", 
-        skills_maintenance: "Manutenção de Computadores",
-        skills_docker: "Docker", 
-        skills_js: "JavaScript", 
-        skills_infra: "Infra. de Redes",
+            // Hero (Página Inicial)
+            hero_greeting: "Oi! Eu sou",
+            hero_name: "Pedro Gonçalves",
+            hero_role: ["Desenvolvedor Front-End", "Infraestrutura de Redes"],
+            hero_btn_projects: "Ver Projetos",
+            hero_btn_contact: "Contato",
 
-        // Projetos (da index.html)
-        sections_projects: "Projetos",
-        projects_title_belara: "Site Belara", 
-        projects_description_belara: "Descrição do Site Belara. Um projeto responsivo e moderno.",
-        projects_title_react: "Gastronelle Delivery", 
-        projects_description_react: "Site de E-commerce de vendas de restaurantes e mercados.",
-        projects_title_csharp_console: "Spotify Clone", 
-        projects_description_csharp_console: "Replicação do Spotify.",
-        project_btn_view: "Ver Projeto", 
-        project_btn_live: " Demonstração",
-        
-        // Contato (Seções e Página de Contato)
-        sections_contact: "Entre em Contato", 
-        contact_phone: "Telefone", 
-        contact_email: "Email", 
-        contact_linkedin: "LinkedIn", 
-        contact_github: "GitHub",
-        resume: "Currículo",
-        form_title: "Envie uma Mensagem",
-        contact_links_title: "Ou me encontre por aqui:",
-        form_name: "Nome",
-        form_email: "Email",
-        form_subject: "Assunto",
-        form_message: "Mensagem",
-        form_button: "Enviar Mensagem",
+            // Sobre (Página Inicial - TEXTO CURTO)
+            sections_about: "Sobre Mim",
+            sections_aboutText: "Olá! Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando o Ensino Médio e Técnico em Informática no Colégio Cotemig. Estou buscando ativamente uma oportunidade de estágio para aplicar e expandir meus conhecimentos práticos. Minhas habilidades incluem HTML, CSS, C# e MySQL, além de manutenção de computadores. Meu objetivo é aprender continuamente e contribuir de forma prática para o crescimento da empresa e da equipe.",
 
-        // Rodapé
-        sections_footer: "© 2025 Pedro Gonçalves. Todos os direitos reservados.",
-    },
-    "en-US": {
-        lang_text: "EN-US",
-        // Títulos das Páginas
-        title_index: "Pedro Gonçalves - Front-End Developer",
-        title_sobre: "About Me - Pedro Gonçalves",
-        title_projetos: "Projects - Pedro Gonçalves",
-        title_contato: "Contact - Pedro Gonçalves",
+            // Sobre (Página Sobre - TEXTO LONGO)
+            about_p1: "Eu sou Pedro Gonçalves, um jovem de 17 anos apaixonado por tecnologia e atualmente cursando o Ensino Médio e Técnico em Informática no Colégio Cotemig. Estou buscando ativamente uma oportunidade de estágio para aplicar e expandir meus conhecimentos práticos.",
+            about_p2: "Minhas habilidades incluem desenvolvimento web com HTML e CSS, lógica de programação em C# e noções de banco de dados MySQL. Também tenho experiência com montagem e manutenção de computadores. Além da minha formação principal, completei diversos cursos, incluindo Fundamentos de Hardware, Introdução à Cibersegurança e Introdução à IA Moderna pela Cisco Academy.",
+            about_p3: "Meu objetivo é aprender continuamente e contribuir de forma prática para o crescimento da empresa e da equipe.",
 
-        // Navegação
-        nav_inicio: "Home", nav_sobre: "About", nav_projetos: "Projects", nav_habilidades: "Skills", nav_contato: "Contact Me",
-        
-        // Hero (Página Inicial)
-        hero_greeting: "Hi! I am", 
-        hero_name: "Pedro Gonçalves",
-        hero_role: ["Front-End Developer", "Network Infrastructure"],
-        hero_btn_projects: "View Projects", 
-        hero_btn_contact: "Contact",
-        
-        // Sobre (Página Inicial - TEXTO CURTO)
-        sections_about: "About Me", 
-        sections_aboutText: "Hello! I am Pedro Gonçalves, a 17-year-old passionate about technology, currently studying High School and a Technical Course in Informatics at Colégio Cotemig. I am actively seeking an internship to apply and expand my practical knowledge. My skills include HTML, CSS, C#, and MySQL, as well as computer maintenance. My goal is to learn continuously and contribute practically to the company's and team's growth.",
-        
-        // Sobre (Página Sobre - TEXTO LONGO)
-        about_p1: "I am Pedro Gonçalves, a 17-year-old passionate about technology and currently studying High School and a Technical Course in Informatics at Colégio Cotemig. I am actively seeking an internship opportunity to apply and expand my practical knowledge.",
-        about_p2: "My skills include web development with HTML and CSS, programming logic in C#, and notions of MySQL databases. I also have experience with computer assembly and maintenance. In addition to my main training, I completed several courses, including Hardware Fundamentals, Introduction to Cybersecurity, and Introduction to Modern AI from the Cisco Academy.",
-        about_p3: "My goal is to learn continuously and contribute practically to the growth of the company and the team.",
-        
-        // Formação
-        sections_education: "Education", 
-        education_course: "Technical in Computer Science", 
-        education_school: "Cotemig College", 
-        education_period: "In Progress (Expected Completion: 2026)",
-        
-        // Habilidades
-        sections_skills: "Skills", 
-        skills_html: "HTML", 
-        skills_css: "CSS", 
-        skills_csharp: "C#", 
-        skills_linux: "LINUX", 
-        skills_mysql: "MySQL", 
-        skills_maintenance: "Computer Maintenance",
-        skills_docker: "Docker", 
-        skills_js: "JavaScript", 
-        skills_infra: "Network Infra.",
+            // Experiência
+            sections_experience: "Experiência",
+            xp_role_1: "Estagiário em DevOps",
+            xp_company_1: "Construsite Brasil",
+            xp_date_1: "Jan/2026 - Atualmente",
+            xp_desc_1: "Responsável pela instalação e configuração de hardware e software, gestão de inventário de ativos tecnológicos, troubleshooting de falhas técnicas e manutenção preventiva de sistemas para garantir a continuidade das operações.",
 
-        // Projetos (da index.html)
-        sections_projects: "Projects",
-        projects_title_belara: "Belara Website", 
-        projects_description_belara: "Description of Belara Website. A responsive and modern project.",
-        projects_title_react: "Delivery Gastronelle", 
-        projects_description_react: "E-commerce website for restaurant and market sales.",
-        projects_title_csharp_console: "Spotify Clone", 
-        projects_description_csharp_console: "Spotify Replication.",
-        project_btn_view: "View Project", 
-        project_btn_live: " Live Demo",
-        
-        // Contato 
-        sections_contact: "Contact Me", 
-        contact_phone: "Phone", 
-        contact_email: "Email", 
-        contact_linkedin: "LinkedIn", 
-        contact_github: "GitHub",
-        resume: "Resume",
-        form_title: "Send a Message",
-        contact_links_title: "Or find me here:",
-        form_name: "Name",
-        form_email: "Email",
-        form_subject: "Subject",
-        form_message: "Message",
-        form_button: "Send Message",
+            // Formação
+            sections_education: "Formação",
+            education_course: "Técnico em Informática",
+            education_school: "Colégio Cotemig",
+            education_period: "Cursando (Previsão de Conclusão: 2026)",
 
-        // Rodapé
-        sections_footer: "© 2025 Pedro Gonçalves. All rights reserved.",
-    }
-};
+            // Habilidades
+            sections_skills: "Habilidades",
+            skills_html: "HTML",
+            skills_css: "CSS",
+            skills_csharp: "C#",
+            skills_linux: "LINUX",
+            skills_mysql: "MySQL",
+            skills_maintenance: "Manutenção de Computadores",
+            skills_docker: "Docker",
+            skills_js: "JavaScript",
+            skills_infra: "Infra. de Redes",
+
+            // Projetos (da index.html)
+            sections_projects: "Projetos",
+            projects_title_belara: "Site Belara",
+            projects_description_belara: "Descrição do Site Belara. Um projeto responsivo e moderno.",
+            projects_title_react: "Gastronelle Delivery",
+            projects_description_react: "Site de E-commerce de vendas de restaurantes e mercados.",
+            projects_title_csharp_console: "Spotify Clone",
+            projects_description_csharp_console: "Replicação do Spotify.",
+            project_btn_view: "Ver Projeto",
+            project_btn_live: " Demonstração",
+
+            // Contato (Seções e Página de Contato)
+            sections_contact: "Entre em Contato",
+            contact_phone: "Telefone",
+            contact_email: "Email",
+            contact_linkedin: "LinkedIn",
+            contact_github: "GitHub",
+            resume: "Currículo",
+            form_title: "Envie uma Mensagem",
+            contact_links_title: "Ou me encontre por aqui:",
+            form_name: "Nome",
+            form_email: "Email",
+            form_subject: "Assunto",
+            form_message: "Mensagem",
+            form_button: "Enviar Mensagem",
+
+            // MENSAGENS DO FORMULÁRIO
+            msg_sending: "Enviando...",
+            msg_success: "✅ Mensagem enviada com sucesso!",
+            msg_error_server: "❌ Erro no envio. O servidor respondeu com erro.",
+            msg_error_connection: "⚠️ Erro de conexão! Verifique se o servidor está online.",
+
+            // Rodapé
+            sections_footer: "© 2025 Pedro Gonçalves. Todos os direitos reservados.",
+        },
+        "en-US": {
+            lang_text: "EN-US",
+            // Títulos das Páginas
+            title_index: "Pedro Gonçalves - Front-End Developer",
+            title_sobre: "About Me - Pedro Gonçalves",
+            title_projetos: "Projects - Pedro Gonçalves",
+            title_contato: "Contact - Pedro Gonçalves",
+
+            // Navegação
+            nav_inicio: "Home", nav_sobre: "About", nav_projetos: "Projects", nav_habilidades: "Skills", nav_contato: "Contact Me",
+
+            // Hero (Página Inicial)
+            hero_greeting: "Hi! I am",
+            hero_name: "Pedro Gonçalves",
+            hero_role: ["Front-End Developer", "Network Infrastructure"],
+            hero_btn_projects: "View Projects",
+            hero_btn_contact: "Contact",
+
+            // Sobre (Página Inicial - TEXTO CURTO)
+            sections_about: "About Me",
+            sections_aboutText: "Hello! I am Pedro Gonçalves, a 17-year-old passionate about technology, currently studying High School and a Technical Course in Informatics at Colégio Cotemig. I am actively seeking an internship to apply and expand my practical knowledge. My skills include HTML, CSS, C#, and MySQL, as well as computer maintenance. My goal is to learn continuously and contribute practically to the company's and team's growth.",
+
+            // Sobre (Página Sobre - TEXTO LONGO)
+            about_p1: "I am Pedro Gonçalves, a 17-year-old passionate about technology and currently studying High School and a Technical Course in Informatics at Colégio Cotemig. I am actively seeking an internship opportunity to apply and expand my practical knowledge.",
+            about_p2: "My skills include web development with HTML and CSS, programming logic in C#, and notions of MySQL databases. I also have experience with computer assembly and maintenance. In addition to my main training, I completed several courses, including Hardware Fundamentals, Introduction to Cybersecurity, and Introduction to Modern AI from the Cisco Academy.",
+            about_p3: "My goal is to learn continuously and contribute practically to the growth of the company and the team.",
+
+            // Experience
+            sections_experience: "Experience",
+            xp_role_1: "DevOps Intern",
+            xp_company_1: "Construsite Brasil",
+            xp_date_1: " Jan/2025 - Currently",
+            xp_desc_1: "Responsible for hardware/software installation and configuration, IT asset inventory management, technical troubleshooting, and preventive maintenance of systems to ensure operational continuity.",
+
+            // Formação
+            sections_education: "Education",
+            education_course: "Technical in Computer Science",
+            education_school: "Cotemig College",
+            education_period: "In Progress (Expected Completion: 2026)",
+
+            // Habilidades
+            sections_skills: "Skills",
+            skills_html: "HTML",
+            skills_css: "CSS",
+            skills_csharp: "C#",
+            skills_linux: "LINUX",
+            skills_mysql: "MySQL",
+            skills_maintenance: "Computer Maintenance",
+            skills_docker: "Docker",
+            skills_js: "JavaScript",
+            skills_infra: "Network Infra.",
+
+            // Projetos (da index.html)
+            sections_projects: "Projects",
+            projects_title_belara: "Belara Website",
+            projects_description_belara: "Description of Belara Website. A responsive and modern project.",
+            projects_title_react: "Delivery Gastronelle",
+            projects_description_react: "E-commerce website for restaurant and market sales.",
+            projects_title_csharp_console: "Spotify Clone",
+            projects_description_csharp_console: "Spotify Replication.",
+            project_btn_view: "View Project",
+            project_btn_live: " Live Demo",
+
+            // Contato 
+            sections_contact: "Contact Me",
+            contact_phone: "Phone",
+            contact_email: "Email",
+            contact_linkedin: "LinkedIn",
+            contact_github: "GitHub",
+            resume: "Resume",
+            form_title: "Send a Message",
+            contact_links_title: "Or find me here:",
+            form_name: "Name",
+            form_email: "Email",
+            form_subject: "Subject",
+            form_message: "Message",
+            form_button: "Send Message",
+
+            // MENSAGENS DO FORMULÁRIO
+            msg_sending: "Sending...",
+            msg_success: "✅ Message sent successfully!",
+            msg_error_server: "❌ Error sending. Server responded with error.",
+            msg_error_connection: "⚠️ Connection error! Check if the server is online.",
+
+            // Rodapé
+            sections_footer: "© 2025 Pedro Gonçalves. All rights reserved.",
+        }
+    };
 
     const langSelectorBtn = document.getElementById('lang-selector-btn');
     const langDropdown = document.getElementById('lang-dropdown');
@@ -176,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             langPtMobile.classList.toggle('active', lang === 'pt-BR');
             document.getElementById('lang-en-mobile').classList.toggle('active', lang === 'en-US');
         }
-        
+
         resetTypingAnimation(lang);
     };
 
@@ -192,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     window.addEventListener('click', () => { if (langDropdown && langDropdown.classList.contains('show')) { langDropdown.classList.remove('show'); langSelectorBtn.classList.remove('open'); } });
- //Lógica de animação de digitação
+    //Lógica de animação de digitação
 
     const nameElement = document.getElementById('type-name');
     const roleElement = document.getElementById('type-role');
@@ -204,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function typeEffect(element, text, index, cursor, callback) {
         if (index < text.length) {
             // CORRIGIDO: de volta para textContent
-            element.textContent += text.charAt(index); 
+            element.textContent += text.charAt(index);
             typingTimeout1 = setTimeout(() => typeEffect(element, text, index + 1, cursor, callback), 100);
         } else if (callback) {
             if (cursor) cursor.style.display = 'none';
@@ -226,69 +252,69 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função de animação principal
     function resetTypingAnimation(lang) {
-    // Limpa timeouts antigos se a língua for trocada
-    clearTimeout(typingTimeout1);
-    clearTimeout(typingTimeout2);
+        // Limpa timeouts antigos se a língua for trocada
+        clearTimeout(typingTimeout1);
+        clearTimeout(typingTimeout2);
 
-    // MUDANÇA: Verifica se os elementos existem (corrige bug em outras páginas)
-    if (nameElement && roleElement) {
-        
-        // Pega os textos desta língua
-        const nameText = translations[lang].hero_name;
-        const roleArray = translations[lang].hero_role;
+        // MUDANÇA: Verifica se os elementos existem (corrige bug em outras páginas)
+        if (nameElement && roleElement) {
 
-        // Função interna para iniciar o loop completo
-        function startFullLoop() {
-            // Limpa os campos
-            nameElement.textContent = '';
-            roleElement.textContent = '';
-            if (nameCursor) nameCursor.style.display = 'inline-block';
-            if (roleCursor) roleCursor.style.display = 'none';
+            // Pega os textos desta língua
+            const nameText = translations[lang].hero_name;
+            const roleArray = translations[lang].hero_role;
 
-            // 1. Digita o NOME
-            typeEffect(nameElement, nameText, 0, nameCursor, () => {
-                // 2. Inicia o loop das profissões (começando pela primeira, index 0)
-                loopRolesRecursive(0);
-            });
+            // Função interna para iniciar o loop completo
+            function startFullLoop() {
+                // Limpa os campos
+                nameElement.textContent = '';
+                roleElement.textContent = '';
+                if (nameCursor) nameCursor.style.display = 'inline-block';
+                if (roleCursor) roleCursor.style.display = 'none';
+
+                // 1. Digita o NOME
+                typeEffect(nameElement, nameText, 0, nameCursor, () => {
+                    // 2. Inicia o loop das profissões (começando pela primeira, index 0)
+                    loopRolesRecursive(0);
+                });
+            }
+
+            // Função recursiva para digitar e apagar as profissões
+            function loopRolesRecursive(index) {
+                // Pega a profissão atual
+                const roleText = roleArray[index];
+
+                // 3. Digita a PROFISSÃO
+                if (roleCursor) roleCursor.style.display = 'inline-block';
+                typeEffect(roleElement, roleText, 0, roleCursor, () => {
+
+                    // 4. Espera 3 segundos
+                    typingTimeout1 = setTimeout(() => {
+
+                        // 5. Apaga a PROFISSÃO
+                        deleteEffect(roleElement, roleCursor, () => {
+
+                            // 6. Verifica se tem mais profissões na lista
+                            if (index + 1 < roleArray.length) {
+                                // 7a. SIM: Chama a função de novo com a próxima profissão
+                                loopRolesRecursive(index + 1);
+                            } else {
+                                // 7b. NÃO (é a última): Apaga o NOME
+                                deleteEffect(nameElement, nameCursor, () => {
+
+                                    // 8. Espera 0.5s e recomeça o loop inteiro
+                                    typingTimeout2 = setTimeout(startFullLoop, 500);
+                                });
+                            }
+                        });
+                    }, 3000); // Tempo que o texto fica parado (3 segundos)
+                });
+            }
+            // Inicia o loop completo pela primeira vez
+            startFullLoop();
         }
-
-        // Função recursiva para digitar e apagar as profissões
-        function loopRolesRecursive(index) {
-            // Pega a profissão atual
-            const roleText = roleArray[index];
-
-            // 3. Digita a PROFISSÃO
-            if (roleCursor) roleCursor.style.display = 'inline-block';
-            typeEffect(roleElement, roleText, 0, roleCursor, () => {
-                
-                // 4. Espera 3 segundos
-                typingTimeout1 = setTimeout(() => {
-                    
-                    // 5. Apaga a PROFISSÃO
-                    deleteEffect(roleElement, roleCursor, () => {
-                        
-                        // 6. Verifica se tem mais profissões na lista
-                        if (index + 1 < roleArray.length) {
-                            // 7a. SIM: Chama a função de novo com a próxima profissão
-                            loopRolesRecursive(index + 1);
-                        } else {
-                            // 7b. NÃO (é a última): Apaga o NOME
-                            deleteEffect(nameElement, nameCursor, () => {
-                                
-                                // 8. Espera 0.5s e recomeça o loop inteiro
-                                typingTimeout2 = setTimeout(startFullLoop, 500);
-                            });
-                        }
-                    });
-                }, 3000); // Tempo que o texto fica parado (3 segundos)
-            });
-        }
-        // Inicia o loop completo pela primeira vez
-        startFullLoop();
     }
-}
 
-// Lógica do tema claro/escuro
+    // Lógica do tema claro/escuro
 
     const themeToggle = document.getElementById('themeToggle');
     const applyTheme = (theme) => {
@@ -312,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const langSelectorMobile = document.createElement('div');
             langSelectorMobile.className = 'language-selector-mobile';
-            
+
             langSelectorMobile.innerHTML = `
                 <button class="lang-btn" id="lang-pt-mobile">
                     <img src="https://img.icons8.com/?size=100&id=zHmH8HpOmM90&format=png&color=000000" alt="PT-BR" width="20" height="20"> PT-BR
@@ -322,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="https://img.icons8.com/?size=100&id=aRiu1GGi6Aoe&format=png&color=000000" alt="EN-US" width="20" height="20"> EN-US
                 </button>
             `;
-            
+
             mobileMenu.appendChild(langSelectorMobile);
             document.body.appendChild(mobileMenu);
 
@@ -359,4 +385,50 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(savedTheme);
     const savedLang = localStorage.getItem('language') || 'pt-BR';
     setLanguage(savedLang); // Inicia o idioma e a animação
+
+    // ENVIO FORMULARIO SERVIDOR NAS
+    const formulario = document.getElementById('meuFormulario');
+    if (formulario) {
+        formulario.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const lang = localStorage.getItem('language') || 'pt-BR';
+            const text = translations[lang];
+
+            const dados = {
+                nome: document.getElementById('nome').value,
+                email: document.getElementById('email').value,
+                assunto: document.getElementById('assunto').value,
+                mensagem: document.getElementById('mensagem').value
+            };
+
+            // MEU SERVIDOR NAS (Via Cloudflare Tunnel)
+            const URL_DO_NAS = 'https://api-pedrogoncalves.com.br/enviar-contato';
+
+            const botao = formulario.querySelector('button');
+
+            botao.innerText = text.msg_sending;
+            botao.disabled = true;
+
+            try {
+                const resposta = await fetch(URL_DO_NAS, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(dados)
+                });
+                if (resposta.ok) {
+                    alert(text.msg_success);
+                    formulario.reset();
+                } else {
+                    alert(text.msg_error_server);
+                }
+            } catch (erro) {
+                console.error(erro);
+                alert(text.msg_error_connection);
+            } finally {
+                botao.innerText = text.form_button;
+                botao.disabled = false;
+            }
+        });
+    }
 });
