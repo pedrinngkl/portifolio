@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sections_experience: "Experiência",
             xp_role_1: "Estagiário em DevOps",
             xp_company_1: "Construsite Brasil",
-            xp_date_1: "Jan/2026 - Atualmente",
+            xp_date_1: "Dez/2025 - Atualmente",
             xp_desc_1: "Responsável pela instalação e configuração de hardware e software, gestão de inventário de ativos tecnológicos, troubleshooting de falhas técnicas e manutenção preventiva de sistemas para garantir a continuidade das operações.",
 
             // Formação
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sections_experience: "Experience",
             xp_role_1: "DevOps Intern",
             xp_company_1: "Construsite Brasil",
-            xp_date_1: " Jan/2025 - Currently",
+            xp_date_1: " Dez/2025 - Currently",
             xp_desc_1: "Responsible for hardware/software installation and configuration, IT asset inventory management, technical troubleshooting, and preventive maintenance of systems to ensure operational continuity.",
 
             // Formação
