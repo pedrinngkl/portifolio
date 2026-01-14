@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background-light text-[#222222] transition-colors duration-300;
+  }
+  html.dark body {
+    @apply bg-background-dark text-[#E5E5E5];
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
